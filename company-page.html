@@ -112,27 +112,40 @@
         <div id = "team">
 
             <div class = "gallerie">
-                <img src ="pics/Man-in-office-iStock_0000015347101.jpeg" width="300px" height ="300px"/>
-                <h3>Matthew Cox</h3>
-                <h6>CEO<h6>
+                <img id = "img1" src ="pics/Man-in-office-iStock_0000015347101.jpeg" width="300px" height ="300px"/>
+                <div id = "picTitle1">
+                    <h3>Matthew Cox</h3>
+                    <h6>CEO<h6>
+                </div>
+
                 
             </div>
             <div class = "gallerie">
-                <img src = "pics/susie-deisch.jpg" width = "300px" height ="300px"/>
-                <H3>Alice Benson</H3>
-                <h6>ART DIRECTOR</h6>
+                <img id = "img2" src = "pics/susie-deisch.jpg" width = "300px" height ="300px"/>
+                <div id = "picTitle2">
+                    <h3>Nadine Hoffmann </h3>
+                    <h6>LEAD DESIGNER</h6>
+                </div>
+
+
                 
             </div>
             <div class = "gallerie">
-                <img src ="pics/mahmut.png" width= "300px" height ="300px"/>
-                <H3>Mahmut Holmes</H3>
-                <h6>LEAD WEB DEVELOPER</h6>
+                <img id = "img3" src ="pics/mahmut.png" width= "300px" height ="300px"/>
+                <div id = "picTitle3">
+                    <h3>Mahmut Holmes </h3>
+                    <h6>LEAD DESIGNER</h6>
+                </div>
+
             </div>
 
             <div class = "gallerie">
-                <img src ="pics/katie-young.png" width ="300px" height ="300px"/>
-                <h3>Sara Stadtfeld </h3>
-                <h6>LEAD DESIGNER</h6>
+                <img id = "img4" src ="pics/katie-young.png" width ="300px" height ="300px"/>
+                <div id = "picTitle4">
+                    <h3>Sara Stadtfeld </h3>
+                    <h6>LEAD DESIGNER</h6>
+                </div>
+
 
             </div>
         </div>
@@ -230,6 +243,24 @@
             formButton.style.display = "none";
             form.style.display= "block";
           
+        }
+
+        let ids = ["img1","img2","img3","img4"]
+        let picstitle = ["picTitle1","picTitle2","picTitle3","picTitle4"]
+
+        
+        //hover team pictures//
+
+
+        for(let i = 0;i<picstitle.length ;i++)
+        {
+          
+             document.getElementById(ids[i]).addEventListener("mouseover", function(){
+                document.getElementById(picstitle[i]).style.display = "block"});
+
+            document.getElementById(ids[i]).addEventListener("mouseleave", function(){
+                document.getElementById(picstitle[i]).style.display = "none"});
+            
         }
 
 

@@ -269,6 +269,17 @@ width:80% ;
         }
 
 .gallerie h3,h6{padding-top:10px}
+
+#picTitle1,#picTitle2,#picTitle3,#picTitle4{position:absolute;
+        background-color:black;
+        opacity:0.7;
+        bottom:2rem;
+        width:100%;
+        padding:0px;margin:0px;
+        width:300px;
+        display:none;
+        
+        }
 #container{ 
             color:white;
             text-align:center;
@@ -279,7 +290,11 @@ width:80% ;
 #container div {padding:1rem}
 #container h2{font-size:40px;letter-spacing: 5px;
             }
-.gallerie img{border:3px solid white}
+.gallerie img{border:3px solid white;
+          
+            }
+.gallerie {position:relative;}
+
 footer{background-color:black;
         }
 
